@@ -33,8 +33,8 @@ async function getWeatherByCity(city) {
     const response = await axios.get(BASE_URL, {
       params: {
         key: API_KEY,
-        q: city,
-        lang: 'es', // Para respuestas en español
+        q: city, //Define el lugar
+        lang: 'es', // Idioma en el que quieres obtener la respuesta
       },
     });
     showWeather(response.data);
